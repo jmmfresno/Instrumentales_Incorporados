@@ -1,0 +1,14 @@
+#N canvas 852 67 450 300 10;
+#X obj 81 121 serial pd;
+#X msg 81 43 close;
+#X floatatom 139 17 5 0 0 0 - - -;
+#X obj 81 85 comport \$1 57600;
+#X msg 139 44 open \$1;
+#X obj 81 178 unpack f;
+#X floatatom 81 209 5 0 0 0 - - -;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
